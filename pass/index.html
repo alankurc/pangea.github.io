@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contraseña</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHM4BE2SL5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-YHM4BE2SL5');
+    </script>
+</head>
+<body id="cuenta">
+<section class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-5">
+                    <img src="../img/logo-blanco-pass.png" alt="PANGEA" class="img-fluid">
+                </div>
+                <div class="col-12" id="contador">
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span>DÍAS</li>
+                            <li><span id="hours"></span>HORAS</li>
+                            <li><span id="minutes"></span>MINUTOS</li>
+                            <li><span id="seconds"></span>SEGUNDOS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 pt-5" id="contra">
+                    <p class="text-white">La contraseña para poder ingresar es:</p>
+                    <h1>DONDETODOSEUNE</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let birthday = "Aug 13, 2021 19:00:00",
+            countDown = new Date(birthday).getTime(),
+            x = setInterval(function () {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                    let contador = document.getElementById("contador"),
+                        contra = document.getElementById("contra");
+
+                    contador.style.display = "none";
+                    contra.style.display = "block";
+
+                    clearInterval(x);
+                }
+                //seconds
+            }, 0)
+    }());
+</script>
+</body>
+</html>
