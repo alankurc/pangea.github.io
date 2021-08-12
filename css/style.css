@@ -1833,7 +1833,7 @@ footer.bg-black2 {background: #f8f9fa;}
     .split-container-setting.style-two {max-width: 400px; margin-left: 70px;}
     .split-container-setting.style-three {max-width: 400px;}
     .nav-radius .navbar-nav .nav-item .nav-link {margin-right: 0.1rem; margin-left: 0.1rem; padding-right: 1rem; padding-left: 1rem;}
-    .team-classic-content {padding: 59px 20px;}
+    .team-classic-content {padding: 60px 20px; width: 100%;}
 }
 @media screen and (max-width: 1024px) {
     nav .btn-setting {display: none !important;}
@@ -1867,7 +1867,7 @@ footer.bg-black2 {background: #f8f9fa;}
 @media screen and (max-width: 767px) {
     body {text-align: center;}
     h1, .h1 {font-size: 2.65rem;}
-    h2, .main-title.style-two h2, .cbp-l-project-title {font-size: 2.2rem;}
+    h2, .main-title.style-two h2, .cbp-l-project-title {font-size: 30px;}
     h3 {font-size: 1.375rem;}
     h4 {font-size: 1.115rem;}
     p {font-size: 14px;}
