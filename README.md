@@ -16,6 +16,7 @@ Esteban Silva Montes de Oca
 - Presentación de cada uno
 - Portfolio
 - Contacto
+- Pass
 
 ## 🚀 Tecnologias
 ### La página fue desarrollada en:
@@ -23,12 +24,11 @@ Esteban Silva Montes de Oca
 HTML
 CSS
 JS JQuery
-NodeJS
 ```
 
-#### Para el formulario se uso una API para enviar un email a la persona que lo complete y a nosotros como registro:
+#### Para el formulario se uso un formulario de Mailchimp para que se les envie un mail de gracias:
 ```
-Email API: SendGrid
+Email API: Mailchimp
 Email Template: /mails
 ```
 
