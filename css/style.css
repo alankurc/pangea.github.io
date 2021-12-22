@@ -35,9 +35,8 @@
 .port{color: #E9515B;}
 .port:hover{color: #8345DB;}
 /* CONTACTO LANDING */
-#contacto {background-color: #8345DB; height: 100vh;}
+#contacto {background-color: #8345DB;}
 #contacto section {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +44,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-position-y: -380px;
 }
 #contacto #form {background-color: #fff; border-radius: 20px; padding: 50px 70px;}
 #contacto input {border: 0 !important; border-bottom: 2px solid #8345DB !important; border-radius: 0 !important;}
